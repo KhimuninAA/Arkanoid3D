@@ -8,14 +8,22 @@
 import Cocoa
 
 @main
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMenuDelegate {
 
     @IBOutlet var window: NSWindow!
-
+    var rootView: RootView?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let levels = LevelUtils.getLevel(name: "LBreakout2")
-        print(levels)
+        rootView = RootView()
+        window.contentView = rootView
+        window.delegate = self
+        window.menu?.delegate = self
+        self.window.title = NSLocalizedString("Mahjong 3D", comment: "")
+        let wFrame = Storage.readWindowFrame()
+        if wFrame.width > 50 && wFrame.height > 50 {
+            window.setFrame(wFrame, display: true)
+        }
+        //test
         // Insert code here to initialize your application
     }
 
@@ -27,6 +35,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        sender.orderOut(self)
+        //save window
+        let frame = window.frame
+        Storage.save(windowFrame: frame)
+        return false
+    }
+
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 
 }
 

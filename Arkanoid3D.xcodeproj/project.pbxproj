@@ -18,6 +18,12 @@
 		BF1DE83C2A77DE0800B7E352 /* BrickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE83B2A77DE0800B7E352 /* BrickType.swift */; };
 		BF1DE83E2A77E1DC00B7E352 /* ExtraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */; };
 		BF1DE8442A78D7BF00B7E352 /* BrickItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */; };
+		FD898B2D2A799B2300AF8FA7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B2C2A799B2300AF8FA7 /* RootView.swift */; };
+		FD898B302A799B4E00AF8FA7 /* ScenesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B2F2A799B4E00AF8FA7 /* ScenesView.swift */; };
+		FD898B332A799BB400AF8FA7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B322A799BB400AF8FA7 /* Storage.swift */; };
+		FD898B362A799CA400AF8FA7 /* Scene.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FD898B352A799CA400AF8FA7 /* Scene.scnassets */; };
+		FD898B382A799E3C00AF8FA7 /* BrickNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B372A799E3C00AF8FA7 /* BrickNode.swift */; };
+		FD898B3A2A79A37600AF8FA7 /* BrickMaterialUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B392A79A37600AF8FA7 /* BrickMaterialUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		BF1DE83B2A77DE0800B7E352 /* BrickType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickType.swift; sourceTree = "<group>"; };
 		BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraType.swift; sourceTree = "<group>"; };
 		BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickItem.swift; sourceTree = "<group>"; };
+		FD898B2C2A799B2300AF8FA7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FD898B2F2A799B4E00AF8FA7 /* ScenesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesView.swift; sourceTree = "<group>"; };
+		FD898B322A799BB400AF8FA7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		FD898B352A799CA400AF8FA7 /* Scene.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Scene.scnassets; sourceTree = "<group>"; };
+		FD898B372A799E3C00AF8FA7 /* BrickNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickNode.swift; sourceTree = "<group>"; };
+		FD898B392A79A37600AF8FA7 /* BrickMaterialUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickMaterialUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,10 @@
 		BF1DE8212A77BA9400B7E352 /* Arkanoid3D */ = {
 			isa = PBXGroup;
 			children = (
+				FD898B342A799C9200AF8FA7 /* Scenes */,
+				FD898B312A799BA400AF8FA7 /* Storage */,
+				FD898B2E2A799B4100AF8FA7 /* ScenesViews */,
+				FD898B2B2A799B1100AF8FA7 /* Views */,
 				BF1DE8302A77BAB000B7E352 /* Textures */,
 				BF1DE82F2A77BAA800B7E352 /* Levels */,
 				BF1DE8222A77BA9400B7E352 /* AppDelegate.swift */,
@@ -96,6 +112,40 @@
 				BF1DE8352A77BACE00B7E352 /* bricks.png */,
 			);
 			path = Textures;
+			sourceTree = "<group>";
+		};
+		FD898B2B2A799B1100AF8FA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD898B2C2A799B2300AF8FA7 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD898B2E2A799B4100AF8FA7 /* ScenesViews */ = {
+			isa = PBXGroup;
+			children = (
+				FD898B2F2A799B4E00AF8FA7 /* ScenesView.swift */,
+				FD898B372A799E3C00AF8FA7 /* BrickNode.swift */,
+				FD898B392A79A37600AF8FA7 /* BrickMaterialUtils.swift */,
+			);
+			path = ScenesViews;
+			sourceTree = "<group>";
+		};
+		FD898B312A799BA400AF8FA7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FD898B322A799BB400AF8FA7 /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		FD898B342A799C9200AF8FA7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FD898B352A799CA400AF8FA7 /* Scene.scnassets */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1DE8322A77BABE00B7E352 /* LBreakout1.txt in Resources */,
+				FD898B362A799CA400AF8FA7 /* Scene.scnassets in Resources */,
 				BF1DE8362A77BACF00B7E352 /* bricks.png in Resources */,
 				BF1DE8252A77BA9600B7E352 /* Assets.xcassets in Resources */,
 				BF1DE8282A77BA9600B7E352 /* MainMenu.xib in Resources */,
@@ -174,8 +225,13 @@
 			files = (
 				BF1DE8442A78D7BF00B7E352 /* BrickItem.swift in Sources */,
 				BF1DE83E2A77E1DC00B7E352 /* ExtraType.swift in Sources */,
+				FD898B302A799B4E00AF8FA7 /* ScenesView.swift in Sources */,
+				FD898B2D2A799B2300AF8FA7 /* RootView.swift in Sources */,
 				BF1DE83A2A77BB1F00B7E352 /* LevelUtils.swift in Sources */,
+				FD898B332A799BB400AF8FA7 /* Storage.swift in Sources */,
+				FD898B3A2A79A37600AF8FA7 /* BrickMaterialUtils.swift in Sources */,
 				BF1DE8232A77BA9400B7E352 /* AppDelegate.swift in Sources */,
+				FD898B382A799E3C00AF8FA7 /* BrickNode.swift in Sources */,
 				BF1DE83C2A77DE0800B7E352 /* BrickType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

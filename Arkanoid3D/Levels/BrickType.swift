@@ -56,6 +56,55 @@ enum BrickType {
 }
 
 extension BrickType {
+    func index() -> Double {
+        switch self{
+        case .none:
+            return 0
+        case .wall:
+            return 0
+        case .brick1:
+            return 1
+        case .brick_chaos:
+            return 2
+        case .brick3:
+            return 3
+        case .brick4:
+            return 4
+        case .brick5:
+            return 5
+        case .brick6:
+            return 6
+        case .brick_heal7:
+            return 7
+        case .brick_heal8:
+            return 8
+        case .brick_heal9:
+            return 9
+        case .brick10:
+            return 10
+        case .brick11:
+            return 11
+        case .brick12:
+            return 12
+        case .brick13:
+            return 13
+        case .brick14:
+            return 14
+        case .brick15:
+            return 15
+        case .brick16:
+            return 16
+        case .brick17:
+            return 17
+        case .brick_exp:
+            return 18
+        case .brick_grow:
+            return 19
+        }
+    }
+}
+
+extension BrickType {
     static func getType(by char: Character) -> BrickType {
         if char == "E" {
             return .wall
