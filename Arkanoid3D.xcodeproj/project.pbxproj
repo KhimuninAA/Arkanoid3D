@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1DE8232A77BA9400B7E352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8222A77BA9400B7E352 /* AppDelegate.swift */; };
+		BF1DE8252A77BA9600B7E352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1DE8242A77BA9600B7E352 /* Assets.xcassets */; };
+		BF1DE8282A77BA9600B7E352 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF1DE8262A77BA9600B7E352 /* MainMenu.xib */; };
+		BF1DE8322A77BABE00B7E352 /* LBreakout1.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF1DE8312A77BABE00B7E352 /* LBreakout1.txt */; };
+		BF1DE8342A77BAC800B7E352 /* LBreakout2.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF1DE8332A77BAC800B7E352 /* LBreakout2.txt */; };
+		BF1DE8362A77BACF00B7E352 /* bricks.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1DE8352A77BACE00B7E352 /* bricks.png */; };
+		BF1DE8382A77BAD600B7E352 /* extras.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1DE8372A77BAD500B7E352 /* extras.png */; };
+		BF1DE83A2A77BB1F00B7E352 /* LevelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8392A77BB1F00B7E352 /* LevelUtils.swift */; };
+		BF1DE83C2A77DE0800B7E352 /* BrickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE83B2A77DE0800B7E352 /* BrickType.swift */; };
+		BF1DE83E2A77E1DC00B7E352 /* ExtraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */; };
+		BF1DE8442A78D7BF00B7E352 /* BrickItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF1DE81F2A77BA9400B7E352 /* Arkanoid3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arkanoid3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1DE8222A77BA9400B7E352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF1DE8242A77BA9600B7E352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF1DE8272A77BA9600B7E352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BF1DE8292A77BA9600B7E352 /* Arkanoid3D.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Arkanoid3D.entitlements; sourceTree = "<group>"; };
+		BF1DE8312A77BABE00B7E352 /* LBreakout1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBreakout1.txt; sourceTree = "<group>"; };
+		BF1DE8332A77BAC800B7E352 /* LBreakout2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBreakout2.txt; sourceTree = "<group>"; };
+		BF1DE8352A77BACE00B7E352 /* bricks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricks.png; sourceTree = "<group>"; };
+		BF1DE8372A77BAD500B7E352 /* extras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extras.png; sourceTree = "<group>"; };
+		BF1DE8392A77BB1F00B7E352 /* LevelUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUtils.swift; sourceTree = "<group>"; };
+		BF1DE83B2A77DE0800B7E352 /* BrickType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickType.swift; sourceTree = "<group>"; };
+		BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraType.swift; sourceTree = "<group>"; };
+		BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1DE81C2A77BA9400B7E352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1DE8162A77BA9400B7E352 = {
+			isa = PBXGroup;
+			children = (
+				BF1DE8212A77BA9400B7E352 /* Arkanoid3D */,
+				BF1DE8202A77BA9400B7E352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF1DE8202A77BA9400B7E352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DE81F2A77BA9400B7E352 /* Arkanoid3D.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1DE8212A77BA9400B7E352 /* Arkanoid3D */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DE8302A77BAB000B7E352 /* Textures */,
+				BF1DE82F2A77BAA800B7E352 /* Levels */,
+				BF1DE8222A77BA9400B7E352 /* AppDelegate.swift */,
+				BF1DE8242A77BA9600B7E352 /* Assets.xcassets */,
+				BF1DE8262A77BA9600B7E352 /* MainMenu.xib */,
+				BF1DE8292A77BA9600B7E352 /* Arkanoid3D.entitlements */,
+			);
+			path = Arkanoid3D;
+			sourceTree = "<group>";
+		};
+		BF1DE82F2A77BAA800B7E352 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DE8312A77BABE00B7E352 /* LBreakout1.txt */,
+				BF1DE8332A77BAC800B7E352 /* LBreakout2.txt */,
+				BF1DE8392A77BB1F00B7E352 /* LevelUtils.swift */,
+				BF1DE83B2A77DE0800B7E352 /* BrickType.swift */,
+				BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */,
+				BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		BF1DE8302A77BAB000B7E352 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DE8372A77BAD500B7E352 /* extras.png */,
+				BF1DE8352A77BACE00B7E352 /* bricks.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1DE81E2A77BA9400B7E352 /* Arkanoid3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1DE82C2A77BA9600B7E352 /* Build configuration list for PBXNativeTarget "Arkanoid3D" */;
+			buildPhases = (
+				BF1DE81B2A77BA9400B7E352 /* Sources */,
+				BF1DE81C2A77BA9400B7E352 /* Frameworks */,
+				BF1DE81D2A77BA9400B7E352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Arkanoid3D;
+			productName = Arkanoid3D;
+			productReference = BF1DE81F2A77BA9400B7E352 /* Arkanoid3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1DE8172A77BA9400B7E352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BF1DE81E2A77BA9400B7E352 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = BF1DE81A2A77BA9400B7E352 /* Build configuration list for PBXProject "Arkanoid3D" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF1DE8162A77BA9400B7E352;
+			productRefGroup = BF1DE8202A77BA9400B7E352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF1DE81E2A77BA9400B7E352 /* Arkanoid3D */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF1DE81D2A77BA9400B7E352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1DE8322A77BABE00B7E352 /* LBreakout1.txt in Resources */,
+				BF1DE8362A77BACF00B7E352 /* bricks.png in Resources */,
+				BF1DE8252A77BA9600B7E352 /* Assets.xcassets in Resources */,
+				BF1DE8282A77BA9600B7E352 /* MainMenu.xib in Resources */,
+				BF1DE8382A77BAD600B7E352 /* extras.png in Resources */,
+				BF1DE8342A77BAC800B7E352 /* LBreakout2.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1DE81B2A77BA9400B7E352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1DE8442A78D7BF00B7E352 /* BrickItem.swift in Sources */,
+				BF1DE83E2A77E1DC00B7E352 /* ExtraType.swift in Sources */,
+				BF1DE83A2A77BB1F00B7E352 /* LevelUtils.swift in Sources */,
+				BF1DE8232A77BA9400B7E352 /* AppDelegate.swift in Sources */,
+				BF1DE83C2A77DE0800B7E352 /* BrickType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF1DE8262A77BA9600B7E352 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF1DE8272A77BA9600B7E352 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF1DE82A2A77BA9600B7E352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF1DE82B2A77BA9600B7E352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BF1DE82D2A77BA9600B7E352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Arkanoid3D/Arkanoid3D.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBMXWK5W6B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Arkanoid3D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BF1DE82E2A77BA9600B7E352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Arkanoid3D/Arkanoid3D.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UBMXWK5W6B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Arkanoid3D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1DE81A2A77BA9400B7E352 /* Build configuration list for PBXProject "Arkanoid3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1DE82A2A77BA9600B7E352 /* Debug */,
+				BF1DE82B2A77BA9600B7E352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1DE82C2A77BA9600B7E352 /* Build configuration list for PBXNativeTarget "Arkanoid3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1DE82D2A77BA9600B7E352 /* Debug */,
+				BF1DE82E2A77BA9600B7E352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1DE8172A77BA9400B7E352 /* Project object */;
+}
