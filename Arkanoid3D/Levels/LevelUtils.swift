@@ -18,6 +18,7 @@ struct BrickPos: Equatable {
 
 struct LevelItem {
     var name: String = ""
+    var size: BrickPos = BrickPos(x: 0, y: 0)
     var bricks: [BrickItem] = [BrickItem]()
 }
 
@@ -67,6 +68,7 @@ class LevelUtils {
         var levels = [LevelItem]()
         var rowIndex: Int = 0
         var posIndex: Int = 0
+        var maxPosIndex: Int = 0
         if let str = load(name: name) {
             var levelItem: LevelItem? = nil
             let rows = str.components(separatedBy: "\n")
@@ -91,6 +93,7 @@ class LevelUtils {
                             }
                             posIndex += 1
                         }
+                        maxPosIndex = posIndex
                         posIndex = 0
                         rowIndex += 1
                     case .bonus:
@@ -105,7 +108,8 @@ class LevelUtils {
                     }
                 case .level:
                     currentType = type
-                    if let levelItem = levelItem {
+                    if var levelItem = levelItem {
+                        levelItem.size = BrickPos(x: maxPosIndex, y: rowIndex)
                         levels.append(levelItem)
                     }
                     levelItem = LevelItem()

@@ -33,10 +33,19 @@ class BrickNode: SCNNode {
 
 extension BrickNode {
     static func make(type: BrickType) -> BrickNode {
-        let itemGeometry: SCNGeometry? = SCNBox(width: BrickNode.size.x, height: BrickNode.size.y, length: BrickNode.size.z, chamferRadius: 0.02)
+        let itemGeometry: SCNGeometry = SCNBox(width: BrickNode.size.x, height: BrickNode.size.y, length: BrickNode.size.z, chamferRadius: 0.02)
         let itemNode = BrickNode(geometry: itemGeometry, type: type)
-
+        itemNode.physicsBody = SCNPhysicsBody(type: .kinematic, shape: SCNPhysicsShape(geometry: itemGeometry, options: nil))
+        itemNode.physicsBody?.isAffectedByGravity = false
         //itemNode.geometry?.materials = BrickMaterialUtils.makeMaterials(by: type)
+
+        itemNode.physicsBody?.categoryBitMask = PhysicsContactMask.brick
+        itemNode.physicsBody?.collisionBitMask = PhysicsContactMask.ball
+        itemNode.physicsBody?.contactTestBitMask = PhysicsContactMask.ball
+
+        itemNode.physicsBody?.restitution = 0
+        itemNode.physicsBody?.damping = 0
+        itemNode.physicsBody?.mass = 3
 
         return itemNode
     }

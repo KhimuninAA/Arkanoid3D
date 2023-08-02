@@ -7,17 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FCC86E7E-CA10-4076-9251-8F9A0BDF71EE"
+            uuid = "24AD8492-06FF-47A7-BDC7-2101DD2790E0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Arkanoid3D/AppDelegate.swift"
+            filePath = "Arkanoid3D/ScenesViews/ScenesView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "applicationDidFinishLaunching(_:)"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "physicsWorld(_:didBegin:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "24AD8492-06FF-47A7-BDC7-2101DD2790E0 - 49a0412046fd7ac4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arkanoid3D.SceneView.physicsWorld(_: __C.SCNPhysicsWorld, didBegin: __C.SCNPhysicsContact) -&gt; ()"
+                  moduleName = "Arkanoid3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akhimunin/KhimuninGit/Arkanoid3D/Arkanoid3D/ScenesViews/ScenesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "240"
+                  endingLineNumber = "240"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "24AD8492-06FF-47A7-BDC7-2101DD2790E0 - 49a0412046fd7ac4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Arkanoid3D.SceneView.physicsWorld(_: __C.SCNPhysicsWorld, didBegin: __C.SCNPhysicsContact) -&gt; ()"
+                  moduleName = "Arkanoid3D"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/akhimunin/KhimuninGit/Arkanoid3D/Arkanoid3D/ScenesViews/ScenesView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "240"
+                  endingLineNumber = "240"
+                  offsetFromSymbolStart = "416">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
