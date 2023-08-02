@@ -75,9 +75,18 @@ extension SceneView {
     }
 
     func createRacket() {
-        let racketGeometry: SCNGeometry? = SCNBox(width: BrickNode.size.x, height: BrickNode.size.z, length: BrickNode.size.z, chamferRadius: 0.5 * BrickNode.size.z)
+        let racketGeometry: SCNGeometry = SCNBox(width: BrickNode.size.x, height: BrickNode.size.z, length: BrickNode.size.z, chamferRadius: 0.5 * BrickNode.size.z)
 
         racketNode = SCNNode(geometry: racketGeometry)
+
+        racketNode?.physicsBody = SCNPhysicsBody(type: .kinematic, shape: SCNPhysicsShape(geometry: racketGeometry, options: nil))
+        racketNode?.physicsBody?.isAffectedByGravity = false
+
+        racketNode?.physicsBody?.mass = 30
+        racketNode?.physicsBody?.categoryBitMask = PhysicsContactMask.racket
+        racketNode?.physicsBody?.collisionBitMask = PhysicsContactMask.ball
+        racketNode?.physicsBody?.contactTestBitMask = PhysicsContactMask.ball
+
         if let racketNode = racketNode {
             self.scene?.rootNode.addChildNode(racketNode)
         }
@@ -237,8 +246,9 @@ extension SceneView: SCNPhysicsContactDelegate {
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
         let ball = contact.nodeA as? BallNode ?? contact.nodeB as? BallNode
         if let ball = ball {
-            //let speed = ball.physicsBody?.velocity
-            //ball.physicsBody?.velocity = SCNVector3(x: 0, y: 0, z: 0)
+            if let speed = ball.physicsBody?.velocity {
+                ball.physicsBody?.velocity = SCNVector3(x: speed.x, y: speed.y, z: 0)
+            }
         }
     }
 }

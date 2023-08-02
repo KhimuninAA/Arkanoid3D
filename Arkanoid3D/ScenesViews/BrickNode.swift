@@ -45,7 +45,7 @@ extension BrickNode {
 
         itemNode.physicsBody?.restitution = 0
         itemNode.physicsBody?.damping = 0
-        itemNode.physicsBody?.mass = 3
+        itemNode.physicsBody?.mass = 30
 
         return itemNode
     }
