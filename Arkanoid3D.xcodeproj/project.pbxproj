@@ -18,8 +18,8 @@
 		BF1DE83C2A77DE0800B7E352 /* BrickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE83B2A77DE0800B7E352 /* BrickType.swift */; };
 		BF1DE83E2A77E1DC00B7E352 /* ExtraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */; };
 		BF1DE8442A78D7BF00B7E352 /* BrickItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */; };
-		BF1DE8462A7A495400B7E352 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8452A7A495400B7E352 /* BallNode.swift */; };
-		BF1DE8482A7A5BF800B7E352 /* PhysicsContactMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8472A7A5BF800B7E352 /* PhysicsContactMask.swift */; };
+		BF1DE84A2A7B91BF00B7E352 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE8492A7B91BF00B7E352 /* BallNode.swift */; };
+		BF1DE84C2A7B91C400B7E352 /* PhysicsContactMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DE84B2A7B91C400B7E352 /* PhysicsContactMask.swift */; };
 		FD898B2D2A799B2300AF8FA7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B2C2A799B2300AF8FA7 /* RootView.swift */; };
 		FD898B302A799B4E00AF8FA7 /* ScenesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B2F2A799B4E00AF8FA7 /* ScenesView.swift */; };
 		FD898B332A799BB400AF8FA7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD898B322A799BB400AF8FA7 /* Storage.swift */; };
@@ -42,8 +42,8 @@
 		BF1DE83B2A77DE0800B7E352 /* BrickType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickType.swift; sourceTree = "<group>"; };
 		BF1DE83D2A77E1DC00B7E352 /* ExtraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraType.swift; sourceTree = "<group>"; };
 		BF1DE8432A78D7BF00B7E352 /* BrickItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickItem.swift; sourceTree = "<group>"; };
-		BF1DE8452A7A495400B7E352 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BallNode.swift; path = ../../../../Documents/BallNode.swift; sourceTree = "<group>"; };
-		BF1DE8472A7A5BF800B7E352 /* PhysicsContactMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhysicsContactMask.swift; path = ../../../../Documents/PhysicsContactMask.swift; sourceTree = "<group>"; };
+		BF1DE8492A7B91BF00B7E352 /* BallNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
+		BF1DE84B2A7B91C400B7E352 /* PhysicsContactMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsContactMask.swift; sourceTree = "<group>"; };
 		FD898B2C2A799B2300AF8FA7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		FD898B2F2A799B4E00AF8FA7 /* ScenesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesView.swift; sourceTree = "<group>"; };
 		FD898B322A799BB400AF8FA7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
@@ -129,11 +129,11 @@
 		FD898B2E2A799B4100AF8FA7 /* ScenesViews */ = {
 			isa = PBXGroup;
 			children = (
+				BF1DE84B2A7B91C400B7E352 /* PhysicsContactMask.swift */,
+				BF1DE8492A7B91BF00B7E352 /* BallNode.swift */,
 				FD898B2F2A799B4E00AF8FA7 /* ScenesView.swift */,
 				FD898B372A799E3C00AF8FA7 /* BrickNode.swift */,
 				FD898B392A79A37600AF8FA7 /* BrickMaterialUtils.swift */,
-				BF1DE8452A7A495400B7E352 /* BallNode.swift */,
-				BF1DE8472A7A5BF800B7E352 /* PhysicsContactMask.swift */,
 			);
 			path = ScenesViews;
 			sourceTree = "<group>";
@@ -235,11 +235,11 @@
 				FD898B2D2A799B2300AF8FA7 /* RootView.swift in Sources */,
 				BF1DE83A2A77BB1F00B7E352 /* LevelUtils.swift in Sources */,
 				FD898B332A799BB400AF8FA7 /* Storage.swift in Sources */,
-				BF1DE8462A7A495400B7E352 /* BallNode.swift in Sources */,
+				BF1DE84A2A7B91BF00B7E352 /* BallNode.swift in Sources */,
 				FD898B3A2A79A37600AF8FA7 /* BrickMaterialUtils.swift in Sources */,
 				BF1DE8232A77BA9400B7E352 /* AppDelegate.swift in Sources */,
 				FD898B382A799E3C00AF8FA7 /* BrickNode.swift in Sources */,
-				BF1DE8482A7A5BF800B7E352 /* PhysicsContactMask.swift in Sources */,
+				BF1DE84C2A7B91C400B7E352 /* PhysicsContactMask.swift in Sources */,
 				BF1DE83C2A77DE0800B7E352 /* BrickType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

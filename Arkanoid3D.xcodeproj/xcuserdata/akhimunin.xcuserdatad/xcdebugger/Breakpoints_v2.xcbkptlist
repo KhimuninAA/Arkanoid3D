@@ -7,20 +7,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "24AD8492-06FF-47A7-BDC7-2101DD2790E0"
-            shouldBeEnabled = "Yes"
+            uuid = "B71B6883-92DB-4B8D-8CFF-53D14B6FB6F2"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Arkanoid3D/ScenesViews/ScenesView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "physicsWorld(_:didBegin:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "24AD8492-06FF-47A7-BDC7-2101DD2790E0 - 49a0412046fd7ac4"
+                  uuid = "B71B6883-92DB-4B8D-8CFF-53D14B6FB6F2 - 49a0412046fd7858"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/akhimunin/KhimuninGit/Arkanoid3D/Arkanoid3D/ScenesViews/ScenesView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "240"
-                  endingLineNumber = "240"
-                  offsetFromSymbolStart = "432">
+                  startingLineNumber = "252"
+                  endingLineNumber = "252"
+                  offsetFromSymbolStart = "128">
                </Location>
                <Location
-                  uuid = "24AD8492-06FF-47A7-BDC7-2101DD2790E0 - 49a0412046fd7ac4"
+                  uuid = "B71B6883-92DB-4B8D-8CFF-53D14B6FB6F2 - 49a0412046fd772e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,9 +45,9 @@
                   urlString = "file:///Users/akhimunin/KhimuninGit/Arkanoid3D/Arkanoid3D/ScenesViews/ScenesView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "240"
-                  endingLineNumber = "240"
-                  offsetFromSymbolStart = "416">
+                  startingLineNumber = "262"
+                  endingLineNumber = "262"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>

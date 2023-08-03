@@ -33,7 +33,7 @@ class BrickNode: SCNNode {
 
 extension BrickNode {
     static func make(type: BrickType) -> BrickNode {
-        let itemGeometry: SCNGeometry = SCNBox(width: BrickNode.size.x, height: BrickNode.size.y, length: BrickNode.size.z, chamferRadius: 0.02)
+        let itemGeometry: SCNBox = SCNBox(width: BrickNode.size.x, height: BrickNode.size.y, length: BrickNode.size.z, chamferRadius: 0.02)
         let itemNode = BrickNode(geometry: itemGeometry, type: type)
         itemNode.physicsBody = SCNPhysicsBody(type: .kinematic, shape: SCNPhysicsShape(geometry: itemGeometry, options: nil))
         itemNode.physicsBody?.isAffectedByGravity = false

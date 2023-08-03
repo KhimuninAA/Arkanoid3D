@@ -157,6 +157,18 @@ extension SceneView {
 
 extension SceneView: SCNSceneRendererDelegate {
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+        if let ballNode = ballNode, ballNode.statys == .move {
+            //print(self.ballNode?.presentation.position.y)
+            if ballNode.presentation.position.y < 0 {
+                self.ballNode?.statys = .rocket
+                self.ballNode?.physicsBody?.velocity = SCNVector3Make(0, 0, 0)
+            } else {
+                self.ballNode?.physicsBody?.velocity.z = 0
+//                if let velocity = ballNode.physicsBody?.velocity {
+//                    self.ballNode?.physicsBody?.velocity = SCNVector3Make(velocity.x, velocity.y, 0)
+//                }
+            }
+        }
     }
 }
 
@@ -244,11 +256,30 @@ extension SceneView {
 
 extension SceneView: SCNPhysicsContactDelegate {
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+//        let ball = contact.nodeA as? BallNode ?? contact.nodeB as? BallNode
+//        let brick = contact.nodeA as? BrickNode ?? contact.nodeB as? BrickNode
+//        if let ball = ball {
+//            if let speed = ball.physicsBody?.velocity {
+//                if let brick = brick {
+//                    ball.physicsBody?.velocity = SCNVector3(x: speed.x, y: -speed.y, z: 0)
+//                }
+//            }
+//        }
+    }
+
+    func physicsWorld(_ world: SCNPhysicsWorld, didEnd contact: SCNPhysicsContact) {
         let ball = contact.nodeA as? BallNode ?? contact.nodeB as? BallNode
+        let brick = contact.nodeA as? BrickNode ?? contact.nodeB as? BrickNode
         if let ball = ball {
             if let speed = ball.physicsBody?.velocity {
-                ball.physicsBody?.velocity = SCNVector3(x: speed.x, y: speed.y, z: 0)
+                let v1 = 0.5 / sqrt(speed.x * speed.x + speed.y * speed.y)
+                let x = speed.x * v1
+                let y = speed.y * v1
+                ball.physicsBody?.velocity = SCNVector3(x: x, y: y, z: 0)
             }
+        }
+        if let brick = brick {
+            brick.removeFromParentNode()
         }
     }
 }
